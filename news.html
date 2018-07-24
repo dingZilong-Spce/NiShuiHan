@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新闻资讯</title>
+    <link rel="stylesheet" href="./news.css">
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script>
+        $(function () {
+            $('.link-ul>li').mouseenter(function () {
+                $('.logo-ul').stop().slideDown(1000);
+            });
+            $('.link-ul>li').mouseleave(function () {
+                $('.logo-ul').stop().slideUp(1000);
+            })
+            $('.content-li>ul>li:odd').css('top', 40);
+            $('.content-tag:odd').css({backgroundColor:'#CEAE69'});
+            $('.content-line:odd').css({backgroundColor:'#CEAE69'});
+            // $('#nclick').click(function () {
+            //     // $('.content-ul').animate({scrollTop:-650},300)   
+            // })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="clearfix total">
+        <!-- //视频区 -->
+        <div class="video">
+            <video muted loop width="100%" height="100%">
+                <source src="./flash/bg.webm" type="video/webm">
+            </video>
+        </div>
+        <!-- //logo区 -->
+        <div class="link">
+            <div>
+                <ul class="link-ul">
+                    <li>
+                        <img src="./images/logo.png" alt="" class="logo">
+                        <ul class="logo-ul">
+                            <li>
+                                <a href="#one">1&nbsp;画面品质</a>
+                                <span class="logo-line"></span>
+                            </li>
+                            <li>
+                                <a href="#two">2&nbsp;细节曝光</a>
+                                <span class="logo-line"></span>
+                            </li>
+                            <li>
+                                <a href="#three">3&nbsp;逆水首测</a>
+                                <span class="logo-line"></span>
+                            </li>
+                            <li>
+                                <a href="#four">4&nbsp;逆水公测</a>
+                                <span class="logo-line"></span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="wx">
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+        <!-- //内容区 -->
+        <div class="content">
+            <ul class="content-ul clearfix" id="contentUl">
+                <li class="content-li" id="one">
+                    <ul>
+                        <li>
+                            <div class="content-img">
+                                <img src="./images/bg1.jpg" alt="">
+                            </div>
+                            <div class="content-tag">
+                                <p>新闻</p>
+                            </div>
+                            <div class="content-line"></div>
+                            <div class="desc">夜色清冷的绝美大宋！逆水寒夜景放送</div>
+                            <div class="time">2018-06-16</div>
+                            <div class="content-border">
+                                <div class="top border"></div>
+                                <div class="right border"></div>
+                                <div class="left border"></div>
+                                <div class="bottom border"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content-img">
+                                <img src="./images/g1.gif" alt="">
+                            </div>
+                            <div class="content-tag">
+                                <p>新闻</p>
+                            </div>
+                            <div class="content-line"></div>
+                            <div class="desc">逆水寒动态天气效果展示 西湖可滑冰</div>
+                            <div class="time">2018-06-16</div>
+                            <div class="content-border">
+                                <div class="top border"></div>
+                                <div class="right border"></div>
+                                <div class="left border"></div>
+                                <div class="bottom border"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content-img">
+                                <img src="./images/g2.gif" alt="">
+                            </div>
+                            <div class="content-tag">
+                                <p>新闻</p>
+                            </div>
+                            <div class="content-line"></div>
+                            <div class="desc">今日开启“听雪封测”，海量改动抢鲜看</div>
+                            <div class="time">2018-06-16</div>
+                            <div class="content-border">
+                                <div class="top border"></div>
+                                <div class="right border"></div>
+                                <div class="left border"></div>
+                                <div class="bottom border"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content-img">
+                                <img src="./images/bg3.jpg" alt="">
+                            </div>
+                            <div class="content-tag">
+                                <p>新闻</p>
+                            </div>
+                            <div class="content-line"></div>
+                            <div class="desc">用惊喜抵消单调，逆水寒生活技能介绍</div>
+                            <div class="time">2018-06-16</div>
+                            <div class="content-border">
+                                <div class="top border"></div>
+                                <div class="right border"></div>
+                                <div class="left border"></div>
+                                <div class="bottom border"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content-img">
+                                <img src="./images/g3.gif" alt="">
+                            </div>
+                            <div class="content-tag">
+                                <p>新闻</p>
+                            </div>
+                            <div class="content-line"></div>
+                            <div class="desc">轻功还能有什么新花样？看我72变</div>
+                            <div class="time">2018-06-16</div>
+                            <div class="content-border">
+                                <div class="top border"></div>
+                                <div class="right border"></div>
+                                <div class="left border"></div>
+                                <div class="bottom border"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content-img">
+                                <img src="./images/bg4.jpg" alt="">
+                            </div>
+                            <div class="content-tag">
+                                <p>新闻</p>
+                            </div>
+                            <div class="content-line"></div>
+                            <div class="desc">《逆水寒》二测画面继续提升，风格自成一派</div>
+                            <div class="time">2018-06-16</div>
+                            <div class="content-border">
+                                <div class="top border"></div>
+                                <div class="right border"></div>
+                                <div class="left border"></div>
+                                <div class="bottom border"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content-img">
+                                <img src="./images/bg2.jpg" alt="">
+                            </div>
+                            <div class="content-tag">
+                                <p>新闻</p>
+                            </div>
+                            <div class="content-line"></div>
+                            <div class="desc">逆水寒最全流派展示，这是个看脸的江湖</div>
+                            <div class="time">2018-06-16</div>
+                            <div class="content-border">
+                                <div class="top border"></div>
+                                <div class="right border"></div>
+                                <div class="left border"></div>
+                                <div class="bottom border"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content-img">
+                                <img src="./images/bg5.jpg" alt="">
+                            </div>
+                            <div class="content-tag">
+                                <p>新闻</p>
+                            </div>
+                            <div class="content-line"></div>
+                            <div class="desc">《逆水寒》实装庄园系统，面积超大建造自由</div>
+                            <div class="time">2018-06-16</div>
+                            <div class="content-border">
+                                <div class="top border"></div>
+                                <div class="right border"></div>
+                                <div class="left border"></div>
+                                <div class="bottom border"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="content-li" id="two">
+                    <ul>
+                        <li>
+                            <div class="content-img">
+                                <img src="./images/bg8.jpg" alt="">
+                            </div>
+                            <div class="content-tag">
+                                <p>新闻</p>
+                            </div>
+                            <div class="content-line"></div>
+                            <div class="desc">逆水寒玩家师承首曝 三清山惊澜乍起</div>
+                            <div class="time">2018-06-16</div>
+                            <div class="content-border">
+                                <div class="top border"></div>
+                                <div class="right border"></div>
+                                <div class="left border"></div>
+                                <div class="bottom border"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content-img">
+                                <img src="./images/bg9.jpg" alt="">
+                            </div>
+                            <div class="content-tag">
+                                <p>新闻</p>
+                            </div>
+                            <div class="content-line"></div>
+                            <div class="desc">逆水寒世界观首曝 金风细雨楼对阵六分半堂</div>
+                            <div class="time">2018-06-16</div>
+                            <div class="content-border">
+                                <div class="top border"></div>
+                                <div class="right border"></div>
+                                <div class="left border"></div>
+                                <div class="bottom border"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content-img">
+                                <img src="./images/bg10.jpg" alt="">
+                            </div>
+                            <div class="content-tag">
+                                <p>新闻</p>
+                            </div>
+                            <div class="content-line"></div>
+                            <div class="desc">黄昏细雨红袖刀 逆水寒男神苏梦枕曝光</div>
+                            <div class="time">2018-06-16</div>
+                            <div class="content-border">
+                                <div class="top border"></div>
+                                <div class="right border"></div>
+                                <div class="left border"></div>
+                                <div class="bottom border"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content-img">
+                                <img src="./images/bg11.jpg" alt="">
+                            </div>
+                            <div class="content-tag">
+                                <p>新闻</p>
+                            </div>
+                            <div class="content-line"></div>
+                            <div class="desc">汴京城上空的鹰 逆水寒江湖大哥狄飞惊曝光</div>
+                            <div class="time">2018-06-16</div>
+                            <div class="content-border">
+                                <div class="top border"></div>
+                                <div class="right border"></div>
+                                <div class="left border"></div>
+                                <div class="bottom border"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content-img">
+                                <img src="./images/bg12.jpg" alt="">
+                            </div>
+                            <div class="content-tag">
+                                <p>新闻</p>
+                            </div>
+                            <div class="content-line"></div>
+                            <div class="desc">蹭儿童节热点 逆水寒发布暗黑萝莉姬瑶花</div>
+                            <div class="time">2018-06-16</div>
+                            <div class="content-border">
+                                <div class="top border"></div>
+                                <div class="right border"></div>
+                                <div class="left border"></div>
+                                <div class="bottom border"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content-img">
+                                <img src="./images/bg13.jpg" alt="">
+                            </div>
+                            <div class="content-tag">
+                                <p>新闻</p>
+                            </div>
+                            <div class="content-line"></div>
+                            <div class="desc">逆水寒赫连春水人设首曝 高颜值官二代备胎暖男</div>
+                            <div class="time">2018-06-16</div>
+                            <div class="content-border">
+                                <div class="top border"></div>
+                                <div class="right border"></div>
+                                <div class="left border"></div>
+                                <div class="bottom border"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content-img">
+                                <img src="./images/bg14.jpg" alt="">
+                            </div>
+                            <div class="content-tag">
+                                <p>新闻</p>
+                            </div>
+                            <div class="content-line"></div>
+                            <div class="desc">风雪仗剑排位赛：获奖资格查询</div>
+                            <div class="time">2018-06-16</div>
+                            <div class="content-border">
+                                <div class="top border"></div>
+                                <div class="right border"></div>
+                                <div class="left border"></div>
+                                <div class="bottom border"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content-img">
+                                <img src="./images/bg15.jpg" alt="">
+                            </div>
+                            <div class="content-tag">
+                                <p>新闻</p>
+                            </div>
+                            <div class="content-line"></div>
+                            <div class="desc">试剑天下排位赛：江湖试剑，英雄夺宝</div>
+                            <div class="time">2018-06-16</div>
+                            <div class="content-border">
+                                <div class="top border"></div>
+                                <div class="right border"></div>
+                                <div class="left border"></div>
+                                <div class="bottom border"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="content-li" id="three">
+                    <ul>
+                        <li>
+                            <div class="content-img">
+                                <img src="./images/bg16.jpg" alt="">
+                            </div>
+                            <div class="content-tag">
+                                <p>新闻</p>
+                            </div>
+                            <div class="content-line"></div>
+                            <div class="desc">光棍？不存在的！《逆水寒》推“游戏社保”体系</div>
+                            <div class="time">2018-06-16</div>
+                            <div class="content-border">
+                                <div class="top border"></div>
+                                <div class="right border"></div>
+                                <div class="left border"></div>
+                                <div class="bottom border"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content-img">
+                                <img src="./images/bg17.jpg" alt="">
+                            </div>
+                            <div class="content-tag">
+                                <p>新闻</p>
+                            </div>
+                            <div class="content-line"></div>
+                            <div class="desc">《逆水寒》里的鹿与原野</div>
+                            <div class="time">2018-06-16</div>
+                            <div class="content-border">
+                                <div class="top border"></div>
+                                <div class="right border"></div>
+                                <div class="left border"></div>
+                                <div class="bottom border"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content-img">
+                                <img src="./images/bg18.gif" alt="">
+                            </div>
+                            <div class="content-tag">
+                                <p>新闻</p>
+                            </div>
+                            <div class="content-line"></div>
+                            <div class="desc">做灯是会上瘾的，小姐姐孙某的自白</div>
+                            <div class="time">2018-06-16</div>
+                            <div class="content-border">
+                                <div class="top border"></div>
+                                <div class="right border"></div>
+                                <div class="left border"></div>
+                                <div class="bottom border"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content-img">
+                                <img src="./images/bg19.jpg" alt="">
+                            </div>
+                            <div class="content-tag">
+                                <p>新闻</p>
+                            </div>
+                            <div class="content-line"></div>
+                            <div class="desc">《逆水寒》实装庄园系统，面积超大建造自由</div>
+                            <div class="time">2018-06-16</div>
+                            <div class="content-border">
+                                <div class="top border"></div>
+                                <div class="right border"></div>
+                                <div class="left border"></div>
+                                <div class="bottom border"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content-img">
+                                <img src="./images/bg20.jpg" alt="">
+                            </div>
+                            <div class="content-tag">
+                                <p>新闻</p>
+                            </div>
+                            <div class="content-line"></div>
+                            <div class="desc">才七天时间，你们就把江湖搅成了这样</div>
+                            <div class="time">2018-06-16</div>
+                            <div class="content-border">
+                                <div class="top border"></div>
+                                <div class="right border"></div>
+                                <div class="left border"></div>
+                                <div class="bottom border"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content-img">
+                                <img src="./images/bg21.jpg" alt="">
+                            </div>
+                            <div class="content-tag">
+                                <p>新闻</p>
+                            </div>
+                            <div class="content-line"></div>
+                            <div class="desc">《逆水寒》首测资格申请平台公告</div>
+                            <div class="time">2018-06-16</div>
+                            <div class="content-border">
+                                <div class="top border"></div>
+                                <div class="right border"></div>
+                                <div class="left border"></div>
+                                <div class="bottom border"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content-img">
+                                <img src="./images/bg22.jpg" alt="">
+                            </div>
+                            <div class="content-tag">
+                                <p>新闻</p>
+                            </div>
+                            <div class="content-line"></div>
+                            <div class="desc">《逆水寒》听雪封测资格发放说明</div>
+                            <div class="time">2018-06-16</div>
+                            <div class="content-border">
+                                <div class="top border"></div>
+                                <div class="right border"></div>
+                                <div class="left border"></div>
+                                <div class="bottom border"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content-img">
+                                <img src="./images/bg23.jpg" alt="">
+                            </div>
+                            <div class="content-tag">
+                                <p>新闻</p>
+                            </div>
+                            <div class="content-line"></div>
+                            <div class="desc">《逆水寒》全新官网上线  二测资格申请开启</div>
+                            <div class="time">2018-06-16</div>
+                            <div class="content-border">
+                                <div class="top border"></div>
+                                <div class="right border"></div>
+                                <div class="left border"></div>
+                                <div class="bottom border"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="content-li" id="four">
+                    <ul>
+                        <li>
+                            <div class="content-img">
+                                <img src="./images/bg7.jpg" alt="">
+                            </div>
+                            <div class="content-tag">
+                                <p>新闻</p>
+                            </div>
+                            <div class="content-line"></div>
+                            <div class="desc">熊猫TV《逆水寒》主播招募 正式启动</div>
+                            <div class="time">2018-06-16</div>
+                            <div class="content-border">
+                                <div class="top border"></div>
+                                <div class="right border"></div>
+                                <div class="left border"></div>
+                                <div class="bottom border"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content-img">
+                                <img src="./images/bg7.jpg" alt="">
+                            </div>
+                            <div class="content-tag">
+                                <p>新闻</p>
+                            </div>
+                            <div class="content-line"></div>
+                            <div class="desc">逆水寒动态天气效果展示 西湖可滑冰</div>
+                            <div class="time">2018-06-16</div>
+                            <div class="content-border">
+                                <div class="top border"></div>
+                                <div class="right border"></div>
+                                <div class="left border"></div>
+                                <div class="bottom border"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content-img">
+                                <img src="./images/bg7.jpg" alt="">
+                            </div>
+                            <div class="content-tag">
+                                <p>新闻</p>
+                            </div>
+                            <div class="content-line"></div>
+                            <div class="desc">斗鱼TV《逆水寒》主播招募 正式启动</div>
+                            <div class="time">2018-06-16</div>
+                            <div class="content-border">
+                                <div class="top border"></div>
+                                <div class="right border"></div>
+                                <div class="left border"></div>
+                                <div class="bottom border"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content-img">
+                                <img src="./images/bg7.jpg" alt="">
+                            </div>
+                            <div class="content-tag">
+                                <p>新闻</p>
+                            </div>
+                            <div class="content-line"></div>
+                            <div class="desc">网易CC《逆水寒》主播招募 正式启动</div>
+                            <div class="time">2018-06-16</div>
+                            <div class="content-border">
+                                <div class="top border"></div>
+                                <div class="right border"></div>
+                                <div class="left border"></div>
+                                <div class="bottom border"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- 鼠标点击事件 -->
+        <div class="nclick" id="nclick">
+        </div>
+        <!-- 导航栏 -->
+        <div class="g-ban">
+                <div>
+                <a class="a0" href="">
+                    <span></span>
+                </a>
+                </div>
+                <div>
+                <a class="a1" href="">
+                    <span></span>
+                </a>
+                </div>
+                <div>
+                <a class="a2" href="">
+                    <span></span>
+                </a>
+                </div>
+                <div>
+                <a class="a3" href="">
+                    <span></span>
+                </a>
+                </div>
+                <div>
+                <a class="a4" href="">
+                    <span></span>
+                </a>
+                </div>
+                <div>
+                <a class="a5" href="">
+                    <span></span>
+                </a>
+                </div>
+                <div>
+                <a class="a6" href="">
+                    <span></span>
+                </a>
+                </div>
+                <div>
+                <a class="a7" href="">
+                    <span></span>
+                </a>
+                </div>
+                <div>
+                <a class="a8" href="">
+                    <span></span>
+                </a>
+                </div>
+                <div>
+                <a class="a9" href="">
+                    <span></span>
+                </a>
+                </div>
+                <div>
+                <a class="aq" href="">
+                    <span></span>
+                </a>
+                </div>
+                <div>
+                <a class="aw" href="">
+                    <span></span>
+                </a>
+                </div>
+        </div>
+        <!-- 页脚设置 -->
+        <div class="g-foot clearfix">
+            <div class="g-space">
+            <div class="foot-o">
+                <img src="images/foot.png" alt="">
+            </div>
+            <div class="foot-t">
+                <p>公司简介 - 客户服务 - 相关法律 - 网易游戏 - 联系我们 - 商务合作 - 加入我们</p>
+                <p class="pp">网易公司版权所有 @1997-2018 <span>点击查看家长监护工程></span></p>
+            </div>
+            <div class="foot-w">
+                <p>本游戏适合16岁以上的玩家进入。</p>
+                <p>积极健康的游戏心态是健康游戏的开端，本游戏故事情节设置紧凑，请你合理控制游戏时间，避免沉溺游戏影响生活，注意自我保护，防范网络陷阱。</p>
+                <p>《网络文化经营许可证》 浙网文[2016]0155-055号 文网游备字 [2017]  C-RPG 0042号</p>
+            </div> 
+            </div>
+        </div>
+     </div>   
+     
+     <script src="./js/jquery-1.12.4.js"></script>
+     <script>
+         var $v = $('.g-ban>div');
+         var arr = [-8, -94, -137, -180, -223, -266, -309, -352, -395, -438, -481, -524, -567, -610, -653, -696, -739, -782];
+         $v.mouseenter(function () {
+             $(this).stop().animate({
+                 paddingTop: 14
+             }, 200);
+             var $s = $(this).children().children();
+             var i = 0;
+             clearInterval(timeone);
+             var timeone = setInterval(function () {
+                 if (arr[i] <= -782) {
+                     $s.css('backgroundPositionY', -782);
+                     clearInterval(timeone);
+                 } else {
+                     $s.css('backgroundPositionY', arr[i]);
+                 }
+                 // arr.push(arr.shift());
+                 i++;
+             }, 10);
+         });
+         var nArr = arr.reverse();
+         $v.mouseleave(function () {
+             $(this).stop().animate({
+                 paddingTop: 28
+             }, 200);
+             var $s = $(this).children().children();
+             var i = 0;
+             clearInterval(timetwo);
+             var timetwo = setInterval(function () {
+                 if (nArr[i] >= -8) {
+                     $s.css('backgroundPositionY', -8);
+                     clearInterval(timetwo);
+                 } else {
+                     $s.css('backgroundPositionY', nArr[i]);
+                 }
+                 // $s.css('backgroundPositionY', nArr[i]);
+                 // arr.push(arr.shift());
+                 i++;
+             }, 10);
+         });
+ 
+     </script>
+</body>
+
+</html>

@@ -1,0 +1,421 @@
+body,ul,li,h1,h2,h3,h4,h5,h6,div{
+    margin: 0;
+    padding: 0;
+}
+/* 清除浮动 */
+.clearfix:after,.clearfix:before{
+    content: "";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+/* 视屏区 */
+.video{
+    position: absolute;
+    left:40%;
+    margin-left: -960px;
+    top:0;
+    z-index: -999;
+}
+video {
+    object-fit: contain;
+}
+/* logo区 */
+.link{
+    position: relative;
+    width:300px;
+    height:300px;
+    margin-left:50px;
+    margin-top: 50px;
+    float: left;
+}
+.logo ,.wx{
+    display: inline-block;
+}
+.link .logo{
+    margin-left: -70px;
+    width:100%;
+}
+.link .wx{
+    width: 91px;
+    height: 101px;
+    margin-left: 34px;
+    margin-top: 5px;
+    background: url(./images/logo-black.png) no-repeat 0px -188px;
+}
+.link .line{
+    background: url(./images/blue-line.png) no-repeat;
+    background-position:-10px;
+    height:10px;
+    width: 91px;
+    animation: anima 0.8s infinite alternate ease-in-out;
+}
+.link li{
+    list-style:none;
+}
+.logo-ul li{
+    position: relative;
+    margin-left:15px;
+    width:130px;
+    height:40px;
+    background-color: #2C2C2C;
+    line-height: 40px;
+    text-align: center;
+    border-bottom:1px solid #414141;
+    transition: 0.7s ease;
+}
+.logo-ul li:hover{
+    background-color: #414141;
+    transform: translate()
+}
+.logo-ul{
+    display: none;
+}
+.logo-ul .logo-line{
+    position: absolute;
+    bottom:-3px;
+    width:0;
+    height:3px;
+    display: block;
+    background-color:none;
+    transition: 0.6s ease;
+    border-bottom: none;
+}
+.logo-ul li:last-child span{
+    height: 3px;
+    bottom:-5px;
+}
+.logo-ul li:hover .logo-line{
+    background-color:  #CEAE69;
+    bottom: 0;
+    width: 130px;
+}
+.logo-ul li:last-child:hover span{
+    background-color:  #CEAE69;
+    bottom: -2px;
+}
+.logo-ul li a{
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color:#C2C2C2;
+}
+@keyframes anima {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(80px);
+        opacity: 1;
+    }
+}
+/* .total{
+    position: relative;
+} */
+/* logo区域的完成 */
+/* 内容区 */
+.content{
+    width:960px;
+    height: 650px;
+    float: left;
+    margin-top:80px;
+    overflow: hidden;
+    
+}
+.content-ul{
+    position: relative;
+    list-style: none;
+    width:960px;
+    height: 650px;
+    overflow-y:scroll;
+    top:-20px;
+    margin-bottom:20px;
+}
+.content-li{
+    width: 960px;
+    height: 650px;
+    margin-bottom: 40px;
+}
+.content-ul::-webkit-scrollbar{
+    display: none;
+}
+.content-li li{
+    position: relative;
+    background: url(./images/bg-blue.png) no-repeat ;
+    width: 226px;
+    height:292px;
+    float: left;
+    margin-right: 10px;
+    margin-top:10px;
+    overflow: hidden;
+
+}
+.content-img{
+    width: 218px;
+    height: 172px;
+    margin-left:7px;
+    margin-top:5px;
+}
+.content-img img{
+    width: 218px;
+    height: 172px;  
+}
+.content-tag{
+    width: 28px;
+    height: 62px;
+    background-color: #354671;
+    color: #fff;
+    text-align: center;
+    line-height: 28px;
+    position: relative;
+    left: 18px;
+    top: -24px;
+}
+.content-line{
+    position: relative;
+    width: 28px;
+    height:2px;
+    background-color: #354671;
+    left: 18px;
+    top: -20px;
+}
+.desc{
+    width: 156px;
+    height: 70px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.2;
+    position: absolute;
+    left:60px;
+    top:195px;
+}
+.time{
+    position: absolute;
+    color: #fff;
+    font-size: 14px;
+    left:140px;
+    top: 255px;
+}
+.content-border{
+    width: 212px;
+    height: 278px;
+    position: absolute;
+    opacity: 1;
+    top: 3px;
+    left:10px;
+}
+.content-border .border{
+    position: absolute;
+    background-color:none;
+}
+.content-border:hover .border{
+    background-color: #fff;
+}
+/* 上 */
+.content-border .top{
+    top: 0;
+    right: 0;
+    width:0;
+    height: 1px;
+    transition: 0.6s ease;
+}
+.content-border:hover  .top{
+    width: 100%;
+}
+/* 下 */
+.content-border .bottom{
+    left: 0;
+    width:0;
+    height: 1px;
+    bottom: 0;
+    transition: 1.6s ease;
+}
+.content-border:hover  .bottom{
+    width: 100%;
+}
+/* 左 */
+.content-border .left{
+    left: 0;
+    width:2px;
+    height:0;
+    top: 0;
+    transition: 1s ease;
+}
+.content-border:hover  .left{
+    height: 100%;
+}
+/* 右 */
+.content-border .right{
+    right: 0;
+    width:1px;
+    height:0;
+    bottom: 0;
+    transition:1.8s ease;
+}
+.content-border:hover  .right{
+    height: 100%;
+}
+/* 鼠标点击事件 */
+.nclick{
+    background: url(./images/mouse.png) no-repeat 0px -449px;
+   width: 56px;
+   height: 55px;
+   position: relative;
+   margin:0 auto;
+   top:720px;
+   animation: mouse 0.5s ease infinite alternate ;
+   cursor: pointer;
+}
+@keyframes mouse {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(10px);
+        opacity: 1;
+    }
+}
+
+
+/* 页脚特效 */
+.g-ban {
+    width: 1392px;
+    height: 100px;
+    position: absolute;
+    top:780px;
+    left: 50px;
+}
+
+.g-ban div {
+    position: relative;
+    float: left;
+    width: 114px;
+    /*height: 100px;*/
+    padding-top: 28px;
+    /*box-sizing: border-box;*/
+}
+
+.g-ban a {
+    display: block;
+    width: 114px;
+    height: 32px;
+}
+
+.g-ban .a0 {
+    background: url(./images/ban-1.png);
+}
+.a0:hover {
+    background: url(./images/nav2_42bbec6.png);
+}
+.g-ban .a1 {
+    background: url(./images/ban-1.png) -114px 0;
+}
+.a1:hover {
+    background: url(./images/nav2_42bbec6.png) -114px 0;
+}
+.g-ban .a2 {
+    background: url(./images/nav2_42bbec6.png) -228px 0;
+}
+.g-ban .a3 {
+    background: url(./images/ban-1.png) -342px 0;
+}
+.a3:hover {
+    background: url(./images/nav2_42bbec6.png) -342px 0;
+}
+.g-ban .a4 {
+    background: url(./images/ban-1.png) -456px 0;
+}
+.a4:hover {
+    background: url(./images/nav2_42bbec6.png) -456px 0;
+}
+.g-ban .a5 {
+    background: url(./images/ban-1.png) -570px 0;
+}
+.a5:hover {
+    background: url(./images/nav2_42bbec6.png) -570px 0;
+}
+.g-ban .a6 {
+    background: url(./images/ban-1.png) -684px 0;
+}
+.a6:hover {
+    background: url(./images/nav2_42bbec6.png) -684px 0;
+}
+.g-ban .a7 {
+    background: url(./images/ban-1.png) -798px 0;
+}
+.a7:hover {
+    background: url(./images/nav2_42bbec6.png) -798px 0;
+}
+.g-ban .a8 {
+    background: url(./images/ban-1.png) -912px 0;
+}
+.a8:hover {
+    background: url(./images/nav2_42bbec6.png) -912px 0;
+}
+.g-ban .a9 {
+    background: url(./images/ban-1.png) -1026px 0;
+}
+.a9:hover {
+    background: url(./images/nav2_42bbec6.png) -1026px 0;
+}
+.g-ban .aq {
+    background: url(./images/ban-1.png) -1140px 0;
+}
+.aq:hover {
+    background: url(./images/nav2_42bbec6.png) -1140px 0;
+}
+.g-ban .aw {
+    background: url(./images/ban-1.png) -1254px 0;
+}
+.aw:hover {
+    background: url(./images/nav2_42bbec6.png) -1254px 0;
+}
+
+.g-ban span {
+    position: absolute;
+    display: block;
+    width: 114px;
+    height: 25px;
+    top: 45px;
+    background: url(./images/nav_gif_bf7383f.png) 0 -8px;
+}
+/* 页脚 */
+.g-foot {
+    text-align: left;
+    width: 100%;
+    height:180px;
+    color: white;
+    font-size:12px;
+    font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,STHeiTi,sans-serif;            
+    background-color: black;
+    margin-top: 850px;
+}
+.g-foot p {
+    margin-bottom: 5px;
+}
+.g-space{
+    margin-left:140px;
+}
+.foot-o {
+    float: left;
+    width: 420px;
+    margin-left: 190px;
+}
+.foot-t {
+    margin-top: 15px;
+    width: 500px;
+    float: left;
+}
+.foot-t span {
+    float: right;
+    margin-right: 84px;
+    background-color: #610000;
+}
+.foot-w{
+    position: relative;
+    top:80px;
+    left:-918px;
+}
